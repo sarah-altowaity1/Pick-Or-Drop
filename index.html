@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Press+Start+2P&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Pick or Drop</title>
+</head>
+<body> 
+    <div id="container">
+        <div id="nav">
+            <ion-icon name="alert-circle-outline" onclick="toggleSummary()"></ion-icon> 
+
+        </div>
+
+
+        <div class ="overlay-summary">
+            <div class="close-btn" onclick="toggleSummary()">&times;</div>
+            <p>
+                Pick or Drop is an interactive video film that will question your ethical decision by placing you in a series of moral dilemmas. Your actions will determine your fate so choose wisely. Regardless of what you choose, you will end the film experience learning how considering what the ethical thing to do can drastically affect your future. 
+            </p>
+    
+        </div>
+        <div class ="text">
+            <center>
+                <h2> 
+                    Pick Or Drop
+                </h2>
+
+                <h4> 
+                    Click on the images below and check how much $$$ your luck brought you!
+                </h4>
+                <a href="scene1.html"> 
+                    Start Film
+                </a>
+            </center>
+        </div> 
+
+        <div id="image-container">
+            <nav >
+               <a id="score">$$$: 0</a> 
+            <nav>
+            <center>
+                <h1 id="signal"></h1>
+            </center>
+        </div> 
+    
+    </div>
+        <!-- upper right alert sign to open overlay summary  -->
+
+    <script>
+        // javascript code to expose the summary overlay 
+        function toggleSummary(){
+            document.body.classList.toggle('activeSummary');
+        }
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

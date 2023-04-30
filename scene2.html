@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Scene 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&display=swap" rel="stylesheet">
+    <style>
+        #video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;        
+        }
+      #video-player{
+        width: 100%;
+        height: 100%;
+        background-color: #89eaa1;
+      }
+
+      *{
+        font-family: 'Poppins', sans-serif;
+      }
+      body{
+        background-color: #89eaa1;
+        align-items: center;
+        justify-content: center;
+      }
+      #menu {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+      }
+      #menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+      #menu li {
+          width: 30vw;
+          margin-top: 25%;
+          margin-bottom: 25%;
+      }
+      #menu li a {
+        color: white;
+        background-color: rgb(103, 100, 78);
+        text-decoration: none;
+        font-size: 2vw;
+        font-weight: 500;
+        padding-right: 10%;
+        padding-left: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border: 2px solid white;
+        border-radius: 10px;
+        box-sizing: border-box;
+
+      }
+      #menu li a:hover {
+        background-color: white;
+        color: black;
+      }
+      h1{
+        color: #f8ff79;
+        font-weight: 500;
+        font-size: 2vw;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div id="video-container">
+        <center>
+            <video id="video-player" controls>
+                <source src="videos/part_2.mp4" type="video/mp4">
+              </video>
+        </center>
+      <div id="menu">
+        <center>
+            <center>
+                <h1> Oh No! Your actions led to your arrest!</h1>
+            </center>
+            <ul>
+                <center>
+                  <li><a href="scene3.html"> Do Not Take Money</a></li>
+                  <li><a href="scene1.html"> Rewind Experience </a></li>
+                </center>
+      
+              </ul>
+        </center>
+
+      </div>
+    </div>
+
+    <script>
+      const videoPlayer = document.querySelector('#video-player');
+      const menu = document.querySelector('#menu');
+      
+      videoPlayer.addEventListener('ended', function() {
+        menu.style.display = 'flex';
+      });
+    </script>
+  </body>
+</html>
