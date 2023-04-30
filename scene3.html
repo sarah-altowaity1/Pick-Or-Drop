@@ -104,6 +104,9 @@
       
       videoPlayer.addEventListener('ended', function() {
         menu.style.display = 'flex';
+        const audio = new Audio('sound/sound.mp3');
+        audio.setAttribute('loop', '');
+        audio.play();
       });
     </script>
   </body>

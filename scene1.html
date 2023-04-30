@@ -77,7 +77,8 @@
   </style>
   </head>
   
-  <body>
+  <body>    
+
     <div id="video-container">
       <center>
         <video id="video-player" controls>
@@ -98,9 +99,12 @@
     <script>
       const videoPlayer = document.querySelector('#video-player');
       const menu = document.querySelector('#menu');
-      
+      var sound = document.getElementById('sound');
       videoPlayer.addEventListener('ended', function() {
         menu.style.display = 'flex';
+        const audio = new Audio('sound/sound.mp3');
+        audio.setAttribute('loop', '');
+        audio.play();
       });
     </script>
   </body>
