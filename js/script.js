@@ -5,33 +5,28 @@ var score =  document.getElementById('score');
 var signal =  document.getElementById('signal');
 var s = 0
 var num_clicked = 0 
+
 for (var i = 0; i < 13; i++) {
   // Create a new image element
-
   var img = document.createElement('img');
 
-  // Set the src attribute to the corresponding URL from the images array
+  // Select a random image
   img.src = images[Math.floor(Math.random() *(3))];
 
   // Set the position of the image element to a random location using CSS
   img.style.position = 'relative';
   img.style.width = "7%"
 
-  // Calculate a random top position within the bounds of the display window
-  // var maxHeight = rect.height + img.height;
-  // var randomTop = rect.top + Math.floor(Math.random() *(rect.bottom - rect.top + 1));
-  // img.style.top = randomTop + 'px';
+  // Position an image randomly within element
   img.style.left = Math.floor(Math.random() *(10)) + '%';
-  // // Calculate a random left position within the bounds of the display window
-  // var maxWidth = rect.width - img.width;
-  // var randomLeft = rect.left + Math.floor(Math.random() * (rect.right - rect.left + 1));
-  // img.style.left = randomLeft + 'px';
   img.style.top = 10 + Math.floor(Math.random() *(50)) + '%';
   // Add a click event listener to the image
   img.addEventListener('click', function() {
     this.style.visibility = 'hidden';
 
     console.log(this.src);
+
+    // Change the score based on the value of money 
     if (this.src.includes("img/moneybag.png")){
       s = s + 100;
     }
@@ -41,7 +36,8 @@ for (var i = 0; i < 13; i++) {
     else{
       s = s + 1;
     }
-    // score.textContent = "$$$: " + s; 
+
+    // Inject text after all images have been clicked
     num_clicked += 1; 
 
     if (num_clicked == 13){
