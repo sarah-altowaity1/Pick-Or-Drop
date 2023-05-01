@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Press+Start+2P&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="css/BTS.css"> 
+    <title>Behind the Scene</title>
+</head>
+<body> 
+    <div id="container">
+        <div id="nav">
+
+            <li><a href="index.html"><ion-icon name="home-outline"></ion-icon></a></li>
+            <li><a href="BTS.html"><ion-icon name="videocam-outline"></ion-icon></a></li>
+            <li><a href="creators.html"><ion-icon name="people-circle-outline"></ion-icon></a></li>
+            <li><ion-icon name="alert-circle-outline" onclick="toggleSummary()"></ion-icon> </li>
+            
+        </div>
+
+
+        <div class ="overlay-summary">
+            <div class="close-btn" onclick="toggleSummary()">&times;</div>
+            <p>
+                Pick or Drop is an interactive video film that will question your ethical decision by placing you in a series of moral dilemmas. Your actions will determine your fate so choose wisely. Regardless of what you choose, you will end the film experience learning how considering what the ethical thing to do can drastically affect your future. 
+            </p>
+        </div>
+
+
+        <div class ="text">
+            <center>
+                <h2> 
+                    Behind the Scene
+                </h2>
+                <h3> 
+                    The journey of filming...
+                </h3>
+            </center>
+        <div id="modal01" class="modal" onclick="this.style.display='none'">
+            <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div class="modal-content">
+              <img id="img01" style="max-width:100% ;max-height: 80vh;">
+            </div>
+            <div id="caption"></div>
+          </div>
+
+        <div class="grid image-grid">
+
+            <div class="grid-block">
+              <div class="tile">
+                <a class="tile-link" href="#">
+                  <img class="tile-img tile-img1" src="img/IMG_7087.jpeg" alt="Outdoor shooting the wallet picking scene" onclick="onClick(this)" class="modal-hover-opacity">
+                </a>
+              </div>
+            </div>
+          
+            <div class="grid-block">
+              <div class="tile">
+                <a class="tile-link" href="#">
+                    <img class="tile-img tile-img2" src="img/IMG_7088.jpeg" alt="Genie Adjusting Camera" onclick="onClick(this)" class="modal-hover-opacity">
+                  </a>
+              </div>
+            </div>
+          
+            <div class="grid-block">
+              <div class="tile">
+                <a class="tile-link" href="#">
+                  <img class="tile-img tile-img3" src="img/IMG_7089.jpeg" alt="Ingy and Genie checking footages" onclick="onClick(this)" class="modal-hover-opacity">
+                 
+                </a>
+              </div>
+            </div>
+          
+            <div class="grid-block">
+              <div class="tile">
+                <a class="tile-link" href="#">
+                  <img class="tile-img tile-img4" src="img/IMG_7094.jpeg" alt="Ryan acting" onclick="onClick(this)" class="modal-hover-opacity">
+                </a>
+              </div>
+            </div>
+          
+            <div class="grid-block">
+              <div class="tile">
+                <a class="tile-link" href="#">
+                  <img class="tile-img tile-img5" src="img/IMG_7099.jpeg" alt="Fillm Crew: Genie, Ingy, and Eric" onclick="onClick(this)" class="modal-hover-opacity">
+                </a>
+              </div>
+            </div>
+        
+          
+            <div class="grid-block">
+              <div class="tile">
+                <a class="tile-link" href="#">
+                  <img class="tile-img tile-img7" src="img/IMG_7107.jpeg" alt="Filming in Genie's Room" onclick="onClick(this)" class="modal-hover-opacity">
+                </a>
+              </div>
+            </div>
+          
+            <div class="grid-block">
+              <div class="tile">
+                <a class="tile-link" href="#">
+                  <img class="tile-img tile-img8" src="img/IMG_7108.jpeg" alt="Filming in Genie's Room2" onclick="onClick(this)" class="modal-hover-opacity">
+                </a>
+              </div>
+            </div>
+          
+            <div class="grid-block">
+              <div class="tile">
+                <a class="tile-link" href="#">
+                  <img class="tile-img tile-img9" src="img/IMG_7109.JPG"  alt="The Good Citizenship award"  onclick="onClick(this)" class="modal-hover-opacity">
+                </a>
+              </div>
+            </div>
+          
+            <div class="grid-block">
+              <div class="tile">
+                <a class="tile-link" href="#">
+                  <img class="tile-img tile-img10" src="img/IMG_7112.jpeg" alt="Moving equipments through campus" onclick="onClick(this)" class="modal-hover-opacity">
+                </a>
+              </div>
+            </div>
+            <div class="grid-block">
+                <div class="tile">
+                  <a class="tile-link" href="#">
+                    <img class="tile-img tile-img5" src="img/IMG_7115.jpeg"  alt="Actor is saying hi!" onclick="onClick(this)" class="modal-hover-opacity">
+                  </a>
+                </div>
+              </div>
+              <div class="grid-block">
+                <div class="tile">
+                  <a class="tile-link" href="#">
+                    <img class="tile-img tile-img1" src="img/IMG_7116.jpeg" alt="Ingy is walking with determination" onclick="onClick(this)" class="modal-hover-opacity">
+                  </a>
+                </div>
+              </div>  
+              
+              <div class="grid-block">
+                <div class="tile">
+                  <a class="tile-link" href="#">
+                    <img class="tile-img tile-img6" src="img/IMG_7105.jpeg" alt="Filming is kind of fun!" onclick="onClick(this)" class="modal-hover-opacity">>
+                  </a>
+                </div>
+              </div>
+
+              <div class="grid-block">
+                <div class="tile">
+                  <a class="tile-link" href="#">
+                    <img class="tile-img tile-img8" src="img/IMG_7117.jpeg" alt="Camera is so heavy" onclick="onClick(this)" class="modal-hover-opacity">>
+                  </a>
+                </div>
+              </div>
+
+          </div>
+        </div> 
+    
+    </div>
+        <!-- upper right alert sign to open overlay summary  -->
+
+    <script>
+        // javascript code to expose the summary overlay 
+        function toggleSummary(){
+            document.body.classList.toggle('activeSummary');
+        }
+        var captionText = document.getElementById("caption");
+        function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        captionText.innerHTML = element.alt;
+        }
+
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
