@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Press+Start+2P&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link rel="stylesheet" href="css/creators.css" />
+    <title>Creators</title>
+  </head>
+  <body>
+    <!-- the navigation part of the page -->
+    <div id="container">
+      <div id="nav">
+        <li>
+          <a href="index.html"><ion-icon name="home-outline"></ion-icon></a>
+        </li>
+        <li>
+          <a href="BTS.html"><ion-icon name="videocam-outline"></ion-icon></a>
+        </li>
+        <li>
+          <a href="creators.html"
+            ><ion-icon name="people-circle-outline"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <ion-icon
+            name="alert-circle-outline"
+            onclick="toggleSummary()"
+          ></ion-icon>
+        </li>
+      </div>
+
+      <div class="overlay-summary">
+        <div class="close-btn" onclick="toggleSummary()">&times;</div>
+        <p>
+          Pick or Drop is an interactive video film that will question your
+          ethical decision by placing you in a series of moral dilemmas. Your
+          actions will determine your fate so choose wisely. Regardless of what
+          you choose, you will end the film experience learning how considering
+          what the ethical thing to do can drastically affect your future.
+        </p>
+      </div>
+
+      <div class="text">
+        <center>
+          <h2>Introducing the Creators!</h2>
+        </center>
+        <h3 style="text-align: center">
+          Special Thanks to our wonderful actor,
+          <br />
+          Ryan!!
+        </h3>
+
+        <!-- introducing actor -->
+        <div class="row2">
+          <div class="our-team">
+            <div class="team_img">
+              <img src="img/Ryan.jpeg" />
+            </div>
+            <div class="team-content">
+              <h3 class="title">Ryan</h3>
+              <span class="post">Actor</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+        <!-- introducing the crew -->
+        <div class="text">
+          <center>
+            <h2 style="margin-top: 30px">The crew</h2>
+          </center>
+        </div>
+        <div>
+          <br />
+          <br />
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="our-team">
+              <div class="team_img">
+                <img src="img/Ingy.jpeg" />
+              </div>
+              <div class="team-content">
+                <h3 class="title">Ingy</h3>
+                <span class="post">Editor, Actor, Director</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="our-team">
+              <div class="team_img">
+                <img src="img/Eric.jpeg" />
+              </div>
+              <div class="team-content">
+                <h3 class="title">Eric</h3>
+                <span class="post">Script Writer, Actor, Production Assistant, Prop Handler</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+          <div class="column">
+            <div class="our-team">
+              <div class="team_img">
+                <img src="img/Genie.jpg" />
+              </div>
+              <div class="team-content">
+                <h3 class="title">Genie</h3>
+                <span class="post">Leader, Web Developer, Actor, Cinematographer</span>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="our-team">
+              <div class="team_img">
+                <img src="img/Sarah.jpeg" />
+              </div>
+              <div class="team-content">
+                <h3 class="title">Sarah</h3>
+                <span class="post">Lead Web Developer, Script Writer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- upper right alert sign to open overlay summary  -->
+
+    <script>
+      // javascript code to expose the summary overlay
+      function toggleSummary() {
+        document.body.classList.toggle("activeSummary");
+      }
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

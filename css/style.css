@@ -136,6 +136,7 @@ to hide summary when it is not active */
     display: flex; /* align items with auto width and auto height*/ 
     justify-content: center;
     grid-row: 1;
+    grid-gap: 5vw;
 }
 
 #image-container nav a{
@@ -154,7 +155,7 @@ to hide summary when it is not active */
 
 /* icon styling */
 ion-icon {
-    /* position: absolute; */
+     /* position: absolute;  */
     font-size: 2.5vw;
     color: white;
     cursor: pointer;
